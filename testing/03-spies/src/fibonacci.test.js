@@ -1,4 +1,4 @@
-const fibonacci = require('./fibonacci');
+    const fibonacci = require('./fibonacci');
 const sinon = require('sinon');
 const assert = require('assert');
 

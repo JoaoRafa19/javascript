@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoRafa19/javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "js"
+  ],
+  "author": "JoaoRafa19",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoRafa19/javascript/issues"
+  },
+  "homepage": "https://github.com/JoaoRafa19/javascript#readme",
+  "description": ""
+}
