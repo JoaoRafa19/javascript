@@ -22,7 +22,6 @@ const routes = {
             console.log(user)
             response.write('login has succeeded!');
             return response.end();
-            
 
         }
     },

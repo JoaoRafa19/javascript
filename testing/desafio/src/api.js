@@ -1,5 +1,7 @@
 const http = require('http')
 
+const Projects = require('./modules/projects/project')
+
 const DEFAULT_USER = { userName: 'username', password: 'password' }
 
 const routes = {
@@ -7,7 +9,47 @@ const routes = {
     default: (request, response) => {
         response.write('hello world!');
         return response.end();
-    }
+    },
+
+    '/login:post': async (request, response) => {
+        // request é um iterador assincrono
+        for await (const data of request) {
+            const user = JSON.parse(data);
+            if (user.userName !== DEFAULT_USER.userName || user.password !== DEFAULT_USER.password) {
+                response.writeHead(401)
+                response.write("Login failed")
+                return response.end()
+            }
+            
+            console.log(user)
+            response.write('login has succeeded!');
+            return response.end();
+
+        }
+    },
+
+
+    '/projects:get': async (request, response) => { 
+        
+        const projects = await new Projects().list()
+        response.write(JSON.stringify(projects))
+        return response.end()
+
+    },
+
+    '/projects:post': async (request, response) => {
+        for await (const data of request) {
+            const item = JSON.parse(data)
+            const project = await new Projects().save(item)
+            response.writeHead(201, {
+                'Content-Type': 'application/json'
+            })
+            response.write(JSON
+                .stringify(project))
+            return response.end()
+            }
+    },
+
 
 }
 
