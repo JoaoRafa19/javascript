@@ -1,1 +1,16 @@
-[{"id":"08761d92-18eb-4ba8-855c-1940ff91650c","name":"Beetle","releaseYear":2022,"available":true,"gasAvailable":true},{"id":"bf67fe20-2e7d-4ff8-8053-11d6b6e11d20","name":"El Camino","releaseYear":2022,"available":true,"gasAvailable":true}]
+[
+    {
+        "id": "e61c4ac4-42eb-4b10-910d-765f47985824",
+        "name": "Taurus",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "df62cdbd-9141-4d5b-987b-da5660c024cb",
+        "name": "Malibu",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    }
+]

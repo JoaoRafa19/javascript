@@ -1,1 +1,11 @@
-[{"id":"22795bdd-e13c-4aff-9247-7df64502c70b","name":"Wagon","carIds":["08761d92-18eb-4ba8-855c-1940ff91650c","bf67fe20-2e7d-4ff8-8053-11d6b6e11d20"],"price":98.34}]
+[
+    {
+        "id": "23f59a52-8f0a-40f9-8801-ea429f8102c9",
+        "name": "Passenger Van",
+        "carIds": [
+            "e61c4ac4-42eb-4b10-910d-765f47985824",
+            "df62cdbd-9141-4d5b-987b-da5660c024cb"
+        ],
+        "price": 94.44
+    }
+]

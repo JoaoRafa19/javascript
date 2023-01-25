@@ -7,12 +7,18 @@
     "test": "test"
   },
   "scripts": {
-    "seed": "node ./seed"
+    "seed": "node ./seed",
+    "test": "mocha -w --parallel './test/**/*.test.js'",
+    "test:cov": "npx nyc npx mocha --parallel './test/**/*.test.js'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "faker": "^5.5.3"
+    "chai": "^4.3.7",
+    "faker": "^5.5.3",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1"
   }
 }
